@@ -1,0 +1,39 @@
+.column {
+    float: left;
+    width: 33.33%;
+    padding: 40px;
+    height: 150px;
+    text-align: center;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+@media screen and (max-width: 1500px) {
+    .column {
+        width: 100%;
+    }
+
+    .wrapper {
+        height: 925px;
+    }
+}
+
+.interest-area {
+    border: none;
+    color: black;
+    border-radius: 10px;
+    background-color: #aeefc5;
+    padding: 10px 10px;
+    align-items: center;
+    font-size: 25px;
+    font-family: 'Raleway', sans-serif;
+}
+
+.interest-area:hover{
+    background-color: #36c087;
+    transition: background .2s ease-in
+}

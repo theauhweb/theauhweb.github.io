@@ -1,0 +1,82 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Raleway', sans-serif;
+  color: white;
+  animation: fadeInAnimation ease 3s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadeInAnimation {
+  0% {
+      opacity: 0;
+  }
+  100% {
+      opacity: 1;
+   }
+}
+
+nav {
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;
+  padding: 1rem 2rem;
+  background: linear-gradient(to right, #b644ff, #628fed); 
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  min-height: 100px;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+}
+
+nav li {
+  text-align: center;
+  padding-left: 1rem; 
+}
+
+nav a {
+  text-decoration: none;
+  color: white
+}
+
+p {
+  text-align: justify;
+  text-justify: auto;
+}
+
+#logo {
+  position: absolute;
+  left: 150px;
+  top: 35px;
+}
+
+ /* 
+  Extra small devices (phones, 1000px and down) 
+*/
+@media only screen and (max-width: 1000px) {
+  nav {
+    flex-direction: column;
+  }
+  nav ul {
+    flex-direction: column;
+    padding-top: 0.5rem;
+  }
+  nav li {
+    padding: 0.5rem 0;
+  }
+
+  p {
+    text-align: center;
+  }
+
+  #logo{
+    position: static;
+  }
+}

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>AUH | About Us</title>
+
+        <link rel="stylesheet" href="../assets/css/styles.css"/>
+        <link rel="stylesheet" href="../assets/css/cookies.css"/>
+
+        <link rel="icon" type="image/x-icon" href="../assets/img/logo.png"/>    
+        
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-FBYYQ9T41Q"></script>
+
+        <script>
+            function readCookie(name) {
+                var nameEQ = escape(name) + "=";
+                var ca = document.cookie.split(';');
+                for (var i = 0; i < ca.length; i++) {
+                    var c = ca[i];
+                    while (c.charAt(0) == ' ') c = c.substring(1, c.length);
+                    if (c.indexOf(nameEQ) == 0) return unescape(c.substring(nameEQ.length, c.length));
+                }
+                return null;
+            }
+            
+            if(readCookie('cookieConsent') == 'true'){
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){dataLayer.push(arguments);}
+                gtag('js', new Date());
+
+                gtag('config', 'G-FBYYQ9T41Q');
+            }
+        </script>
+
+        <style>
+            @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap");
+        </style>
+    </head>
+    <body onload="main()">
+        <div class="cookie-consent-banner" style="color: black; display: none;" id="cookie-consent-banner">
+            <div class="cookie-consent-banner__inner">
+                <div class="cookie-consent-banner__copy">
+                    <div class="cookie-consent-banner__header">&#127850; WE USE COOKIES</div>
+                        <div class="cookie-consent-banner__description">We use analytic cookies to track visits to our website. You can enabled / disable them here.</div>
+                    </div>
+          
+                <div class="cookie-consent-banner__actions">
+                    <button class="cookie-consent-banner__cta" onclick="Accept()">
+                        Accept all
+                    </button>
+                    <button class="cookie-consent-banner-decline__cta" onclick="Decline()">
+                        Only functional
+                    </button>
+               </div>
+            </div>
+        </div>
+        <script src="../assets/js/cookies.js"></script>
+        
+        <nav>
+            <img src="../assets/img/logo.png" height=50px><p style="font-size: 25px; text-align: center"><u id="logo">academy of universal heritage</u></p>
+            <ul>
+                <li>
+                    <a href="../"><p style="font-size: 20px;">Home</p></a>
+                </li>
+                <li>
+                    <a href="">
+                        <p style="font-size: 20px; color: #aeefc5;"><u>About Us</u></p>
+                    </a>
+                </li>
+                <li>
+                    <a href="../grants"><p style="font-size: 20px;">Grants</p></a>
+                </li>
+            </ul>
+        </nav>
+
+        <div style="text-align: center; color: black; padding: 2% 5%; text-align: center;">
+            <h2 style="font-size: 50px; font-weight: 50000;"><b>About Us</b></h2>
+            <br>
+            <hr style="margin: auto; width: 10%; border-width: 10; color: gray; background-color: gray; border-radius: 10px;"/>
+            <br>
+            <p style="font-size: 25px;">
+                The Academy of Universal Heritage was conceptualized to provide an environment that facilitates rational conclusions relating to our heritage, based on primary scientific evidence that is systematically analysed from a
+                multitude of sources. The Founding Directors are Arjuna Weerasinghe, Hao Weimin and Ranjith Liyanage.
+            </p>
+        </div>
+
+        <div style="text-align: center; color: black; padding: 2% 5%; text-align: center;">
+            <h2 style="font-size: 40px; font-weight: bolder;"><u>The Human Proto-History Project</u></h2>
+            <br>
+            <br>
+            <p style="font-size: 25px;">
+                We study and support the study into human proto-history, the missing link between human pre-history and the early historical period. Systematic study of scientific data relating to this period of human history is
+                vital to understanding the journey of the human species. This void in knowledge has been filled with mythology and scientifically un-substaniated opinion. The Human Proto-History Project of the Academy of Universal Heritage
+                is intended to identify scientific data that will systematically reveal the footsteps of mankind accross this period of time.<br><br>
+                The Human Proto-History Project aims to gather scientific data that is as contemporanious to the proto-historical period as possible. This, we believe, enhances accurate understanding of our shared history and discourages
+                distortion of historical events by opinion. We also support the conservation and making available for academic study of more recent records, which have been forgotten in time and may reveal vital information relating to
+                human proto-history.
+            </p>
+        </div>
+
+        <nav id="footer" style="background: linear-gradient(to right, #062641, #3c5767); box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
+            <h2><p id="copyright" style="font-size: 20px; text-align: center;">©2020 - Present AUH Limited. All rights reserved.</p></h2>
+            <ul>
+                <li>
+                    <a href="https://www.youtube.com/channel/UCLjawNQ-7j48G3LBR-d5BsA" target="_blank"><img src="../assets/img/social/youtube.webp" alt="Youtube"/></a>
+                </li>
+                <li>
+                    <a href="https://www.facebook.com/Academy-Of-Universal-Heritage-100655401986300" target="_blank"><img src="../assets/img/social/facebook.webp" alt="Facebook"/></a>
+                </li>
+                <li>
+                    <a href="https://twitter.com/AUH_Tweets" target="_blank"><img src="../assets/img/social/twitter.webp" alt="Twitter"/></a>
+                </li>
+            </ul>
+        </nav>
+        <script src="../assets/js/main.js"></script>
+    </body>
+</html>
